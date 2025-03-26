@@ -6,7 +6,7 @@ const Subscribed= () => {
     
   return (
     <div>
-        <Image src="/images/Nft1.png" width={200} height={200} alt="testing image" />
+      <Image src={"/Nft1.png"} width={200} height={200} alt="testing image" />
     </div>
   )
 }

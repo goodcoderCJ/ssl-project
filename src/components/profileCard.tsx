@@ -9,10 +9,10 @@ interface ProfileCardProps {
   }
   
   const ProfileCard: React.FC<ProfileCardProps> = ({ name, age, location, match, image, verified}) => {
-    const imageSrc = image ? image : "/images/default.png";
+   
     return (
       <div className="border rounded-lg p-4 shadow">
-        <Image src={imageSrc} alt={name} width={300} height={200} className="w-full h-40 object-cover rounded-md" />
+        <Image src={image} alt={name} width={300} height={200} className="w-full h-40 object-cover rounded-md" />
         <h2 className="text-lg font-bold mt-2">{name}, {age}</h2>
         <p className="text-gray-500">{location}</p>
         <p className="text-green-600 font-semibold">{match}% Match</p>
