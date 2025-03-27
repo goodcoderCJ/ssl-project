@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Profile = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto pl-24 pb-24 pr-24">
+      <Link href="/">Back</Link>
       <div className="grid-container grid grid-cols-[10%_29%_35%_5%_10%_5%_5%_1%] grid-rows-[10%_30%_45%_10%_5%]">
         {/* Profile Header */}
         <div className="col-start-1 col-end-9 row-start-1 row-end-2 rounded-lg mt-4">
